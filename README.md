@@ -45,7 +45,7 @@ The program will display the ASCII art and start the countdown timer, updating t
 ## ASCII Example File
 Create a file named ascii.txt with the following content as an example:
 ```txt
-______________
+_______________
 |    TIMER    |
 |_____________|
 ```
