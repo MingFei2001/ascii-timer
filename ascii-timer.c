@@ -19,7 +19,7 @@ void print_ascii_art(const char *filename) {
 
 void print_timer(int seconds) {
   for (int i = seconds; i > 0; --i) {
-    printf("Time left: %d seconds\n", i);
+    printf("\rTime left: %d seconds\n", i);
     fflush(stdout);
     sleep(1);
   }
