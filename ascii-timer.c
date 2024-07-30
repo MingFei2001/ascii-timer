@@ -19,24 +19,25 @@ void print_ascii_art(const char *filename) {
 
 void print_timer(int seconds) {
   for (int i = seconds; i > 0; --i) {
-    printf("\\rTime left: %d seconds", i);
+    printf("Time left: %d seconds\n", i);
     fflush(stdout);
     sleep(1);
   }
-  printf("\\nTime's up!\\n");
+  printf("Time's up!\n");
 }
 
 int main() {
   int duration;
   char ascii_art_file[256];
 
-  printf("Enter the duration (in seconds): ");
+  printf("How long do you want to count down?\ntime: ");
   scanf("%d", &duration);
   printf("Enter the ASCII art file path: ");
   scanf("%s", ascii_art_file);
 
   print_ascii_art(ascii_art_file);
   print_timer(duration);
+  printf("Exiting program ...");
 
   return 0;
 }
